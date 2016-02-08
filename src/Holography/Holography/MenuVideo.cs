@@ -10,31 +10,38 @@ using System.Windows.Forms;
 
 namespace Holography
 {
-    public partial class windowsForm : Form
+    public partial class MenuVideo : Form
     {
-        public windowsForm()
+        public MenuVideo()
         {
             InitializeComponent();
         }
 
         OpenFileDialog ofd = new OpenFileDialog();
 
-        private void SelectionImage_Click(object sender, EventArgs e)
+        private void SelectionVideo_Click(object sender, EventArgs e)
         {
-            ofd.Filter = "JPEG|*.jpeg";
-            if(ofd.ShowDialog() == DialogResult.OK)
+            //ofd.Filter = "JPEG|*.jpeg";
+            if ( ofd.ShowDialog() == DialogResult.OK )
             {
                 FileName.Text = ofd.FileName;
                 SafeFileName.Text = ofd.SafeFileName;
             }
         }
 
+
         private void BouttonDemarrer_Click(object sender, EventArgs e)
         {
-            if ( String.IsNullOrEmpty(SafeFileName.Text) && String.IsNullOrEmpty(textBoxTailleEcran.Text) )
+            if (String.IsNullOrEmpty(SafeFileName.Text) && String.IsNullOrEmpty(textBoxTailleEcran.Text))
             {
-                appeller avec textBoxTailleEcran.Text ofd.SafeFileName
+                // appeller avec textBoxTailleEcran.Text ofd.SafeFileName
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Il manque des informations.");
             }
         }
+
+        private void MenuVideo_Load(object sender, EventArgs e){}
     }
 }
