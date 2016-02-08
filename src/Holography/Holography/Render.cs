@@ -8,9 +8,7 @@ namespace Holography
 {
     public class Render
     {
-        
-
-
+       
         public void SetVirtualScreen(int id, virtualScreen virtualscreen)
         {
 

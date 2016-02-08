@@ -1,6 +1,6 @@
 ﻿namespace Holography
 {
-    partial class windowsForm
+    partial class MenuVideo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.SelectionVideo = new System.Windows.Forms.Button();
             this.FileName = new System.Windows.Forms.TextBox();
-            this.SelectionImage = new System.Windows.Forms.Button();
             this.SafeFileName = new System.Windows.Forms.TextBox();
             this.LabelTailleEcran = new System.Windows.Forms.Label();
             this.textBoxTailleEcran = new System.Windows.Forms.TextBox();
             this.BouttonDemarrer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
+            // SelectionVideo
+            // 
+            this.SelectionVideo.Location = new System.Drawing.Point(33, 49);
+            this.SelectionVideo.Name = "SelectionVideo";
+            this.SelectionVideo.Size = new System.Drawing.Size(103, 41);
+            this.SelectionVideo.TabIndex = 0;
+            this.SelectionVideo.Text = "Selectionner une video";
+            this.SelectionVideo.UseVisualStyleBackColor = true;
+            this.SelectionVideo.Click += new System.EventHandler(this.SelectionVideo_Click);
+            // 
             // FileName
             // 
             this.FileName.Location = new System.Drawing.Point(142, 60);
             this.FileName.Name = "FileName";
             this.FileName.Size = new System.Drawing.Size(191, 20);
-            this.FileName.TabIndex = 0;
-            // 
-            // SelectionImage
-            // 
-            this.SelectionImage.Location = new System.Drawing.Point(33, 49);
-            this.SelectionImage.Name = "SelectionImage";
-            this.SelectionImage.Size = new System.Drawing.Size(103, 41);
-            this.SelectionImage.TabIndex = 1;
-            this.SelectionImage.Text = "Selectionner une image";
-            this.SelectionImage.UseVisualStyleBackColor = true;
-            this.SelectionImage.Click += new System.EventHandler(this.SelectionImage_Click);
+            this.FileName.TabIndex = 1;
             // 
             // SafeFileName
             // 
@@ -66,7 +66,7 @@
             this.LabelTailleEcran.Location = new System.Drawing.Point(33, 188);
             this.LabelTailleEcran.Name = "LabelTailleEcran";
             this.LabelTailleEcran.Size = new System.Drawing.Size(146, 13);
-            this.LabelTailleEcran.TabIndex = 3;
+            this.LabelTailleEcran.TabIndex = 4;
             this.LabelTailleEcran.Text = "Longueur de l\'ecran (carre) :  ";
             // 
             // textBoxTailleEcran
@@ -74,19 +74,19 @@
             this.textBoxTailleEcran.Location = new System.Drawing.Point(221, 186);
             this.textBoxTailleEcran.Name = "textBoxTailleEcran";
             this.textBoxTailleEcran.Size = new System.Drawing.Size(66, 20);
-            this.textBoxTailleEcran.TabIndex = 4;
+            this.textBoxTailleEcran.TabIndex = 5;
             // 
             // BouttonDemarrer
             // 
             this.BouttonDemarrer.Location = new System.Drawing.Point(168, 245);
             this.BouttonDemarrer.Name = "BouttonDemarrer";
             this.BouttonDemarrer.Size = new System.Drawing.Size(165, 30);
-            this.BouttonDemarrer.TabIndex = 5;
+            this.BouttonDemarrer.TabIndex = 6;
             this.BouttonDemarrer.Text = "Demarrer !";
             this.BouttonDemarrer.UseVisualStyleBackColor = true;
             this.BouttonDemarrer.Click += new System.EventHandler(this.BouttonDemarrer_Click);
             // 
-            // windowsForm
+            // MenuVideo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,10 +95,11 @@
             this.Controls.Add(this.textBoxTailleEcran);
             this.Controls.Add(this.LabelTailleEcran);
             this.Controls.Add(this.SafeFileName);
-            this.Controls.Add(this.SelectionImage);
             this.Controls.Add(this.FileName);
-            this.Name = "windowsForm";
-            this.Text = "windowsForm";
+            this.Controls.Add(this.SelectionVideo);
+            this.Name = "MenuVideo";
+            this.Text = "Menu pour une video";
+            this.Load += new System.EventHandler(this.MenuVideo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,8 +107,8 @@
 
         #endregion
 
+        private System.Windows.Forms.Button SelectionVideo;
         private System.Windows.Forms.TextBox FileName;
-        private System.Windows.Forms.Button SelectionImage;
         private System.Windows.Forms.TextBox SafeFileName;
         private System.Windows.Forms.Label LabelTailleEcran;
         private System.Windows.Forms.TextBox textBoxTailleEcran;

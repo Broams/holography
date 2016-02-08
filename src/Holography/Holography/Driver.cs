@@ -8,7 +8,7 @@ namespace Holography
 {
     class Driver : IDisposable
     {
-        private windowsForm windowsForm;
+        private MenuImage windowsForm;
         private Render render;
         private Kinect kinect;
 
