@@ -17,3 +17,4 @@ C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debu
 C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\Holography.MenuQuatreImages.resources
 C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\Holography.MenuVideo.resources
 C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\Holography.csproj.GenerateResource.Cache
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\Holography.MenuPrincipal.resources

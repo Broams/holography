@@ -32,7 +32,7 @@ namespace Holography
 
         private void BouttonDemarrer_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(SafeFileName.Text) && String.IsNullOrEmpty(textBoxTailleEcran.Text))
+            if ( !String.IsNullOrEmpty(SafeFileName.Text) && !String.IsNullOrEmpty(textBoxTailleEcran.Text))
             {
                 // appeller avec textBoxTailleEcran.Text ofd.SafeFileName
             }
