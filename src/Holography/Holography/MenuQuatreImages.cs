@@ -61,7 +61,7 @@ namespace Holography
 
         private void BouttonDemarrer_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(TextBoxImage1.Text) && String.IsNullOrEmpty(TextBoxImage2.Text) && String.IsNullOrEmpty(TextBoxImage3.Text) && String.IsNullOrEmpty(TextBoxImage4.Text) && String.IsNullOrEmpty(textBoxTailleEcran.Text))
+            if ( !String.IsNullOrEmpty(TextBoxImage1.Text) && !String.IsNullOrEmpty(TextBoxImage2.Text) && !String.IsNullOrEmpty(TextBoxImage3.Text) && !String.IsNullOrEmpty(TextBoxImage4.Text) && !String.IsNullOrEmpty(textBoxTailleEcran.Text))
             {
                 // appeller avec textBoxTailleEcran.Text TextBoxImage1.Text TextBoxImage2.Text TextBoxImage3.Text TextBoxImage4.Text
             }

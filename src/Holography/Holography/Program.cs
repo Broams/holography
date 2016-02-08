@@ -8,8 +8,11 @@ namespace Holography
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
+            MenuPrincipal menuPP = new MenuPrincipal();
+            menuPP.ShowDialog();
         }
     }
 }

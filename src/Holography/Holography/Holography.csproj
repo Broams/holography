@@ -51,6 +51,12 @@
     <Compile Include="Driver.cs" />
     <Compile Include="Hologram.cs" />
     <Compile Include="Kinect.cs" />
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuQuatreImages.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
   <ItemGroup>
     <EmbeddedResource Include="MenuImage.resx">
       <DependentUpon>MenuImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuQuatreImages.resx">
       <DependentUpon>MenuQuatreImages.cs</DependentUpon>
