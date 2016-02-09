@@ -36,13 +36,13 @@ namespace Holography
             }
             else if (comboBoxMode.SelectedIndex == 1)
             {
-                MenuVideo menuVideo = new MenuVideo();
+                MenuVideo menuVideo = new MenuVideo(driver);
                 this.Hide();
                 menuVideo.ShowDialog();
             }
             else if (comboBoxMode.SelectedIndex == 2)
             {
-                MenuQuatreImages menuQuatreImage = new MenuQuatreImages();
+                MenuQuatreImages menuQuatreImage = new MenuQuatreImages(driver);
                 this.Hide();
                 menuQuatreImage.ShowDialog();
             }

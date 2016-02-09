@@ -152,7 +152,7 @@
             this.Controls.Add(this.BouttonImage2);
             this.Controls.Add(this.BouttonImage1);
             this.Name = "MenuQuatreImages";
-            this.Text = "MenuQuatreImages";
+            this.Text = "Afficher quatre images";
             this.ResumeLayout(false);
             this.PerformLayout();
 

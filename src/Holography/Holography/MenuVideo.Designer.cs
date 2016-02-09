@@ -98,7 +98,7 @@
             this.Controls.Add(this.FileName);
             this.Controls.Add(this.SelectionVideo);
             this.Name = "MenuVideo";
-            this.Text = "Menu pour une video";
+            this.Text = "Afficher une video";
             this.Load += new System.EventHandler(this.MenuVideo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

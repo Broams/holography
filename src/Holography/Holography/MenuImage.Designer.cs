@@ -98,7 +98,8 @@
             this.Controls.Add(this.SelectionImage);
             this.Controls.Add(this.FileName);
             this.Name = "MenuImage";
-            this.Text = "Menu pour une image";
+            this.Text = "Afficher une image";
+            this.Load += new System.EventHandler(this.MenuImage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

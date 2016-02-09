@@ -59,7 +59,7 @@
             this.Controls.Add(this.comboBoxMode);
             this.Controls.Add(this.button1);
             this.Name = "MenuPrincipal";
-            this.Text = "MenuPrincipal";
+            this.Text = "Menu principal";
             this.ResumeLayout(false);
 
         }

@@ -35,12 +35,18 @@ namespace Holography
         {
             if ( !String.IsNullOrEmpty(SafeFileName.Text) && !String.IsNullOrEmpty(textBoxTailleEcran.Text) )
             {
-                driver.createRender(ofd.SafeFileName, int.Parse(textBoxTailleEcran.Text));
+                driver.createRender(ofd.FileName, int.Parse(textBoxTailleEcran.Text));
+                this.Dispose(true);
             }
             else
             {
                 System.Windows.Forms.MessageBox.Show("Il manque des informations.");
             }
+        }
+
+        private void MenuImage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -8,9 +8,11 @@ namespace Holography
 {
     public class Render
     {
+        public Hologram1 holo;
         public Render(string image, int size)
         {
-
+            virtualScreen vs = new virtualScreen(image);
+            holo = new Hologram1(vs, size);
         }
         public Render(int size, string video)
         {

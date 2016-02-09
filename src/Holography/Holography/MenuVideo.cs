@@ -36,7 +36,7 @@ namespace Holography
         {
             if ( !String.IsNullOrEmpty(SafeFileName.Text) && !String.IsNullOrEmpty(textBoxTailleEcran.Text))
             {
-                driver.createRender(int.Parse(textBoxTailleEcran.Text), ofd.SafeFileName);
+                driver.createRender(int.Parse(textBoxTailleEcran.Text), ofd.FileName);
             }
             else
             {

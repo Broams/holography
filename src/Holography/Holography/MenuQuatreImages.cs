@@ -26,7 +26,7 @@ namespace Holography
             ofd.Filter = "JPEG|*.jpeg";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                TextBoxImage1.Text = ofd.SafeFileName;
+                TextBoxImage1.Text = ofd.FileName;
             }
         }
 
@@ -35,7 +35,7 @@ namespace Holography
             ofd.Filter = "JPEG|*.jpeg";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                TextBoxImage2.Text = ofd.SafeFileName;
+                TextBoxImage2.Text = ofd.FileName;
             }
         }
 
@@ -44,7 +44,7 @@ namespace Holography
             ofd.Filter = "JPEG|*.jpeg";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                TextBoxImage3.Text = ofd.SafeFileName;
+                TextBoxImage3.Text = ofd.FileName;
             }
         }
 
@@ -53,7 +53,7 @@ namespace Holography
             ofd.Filter = "JPEG|*.jpeg";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                TextBoxImage4.Text = ofd.SafeFileName;
+                TextBoxImage4.Text = ofd.FileName;
             }
         }
 

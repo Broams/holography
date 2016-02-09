@@ -9,14 +9,31 @@ namespace Holography
     public class Driver : IDisposable
     {
         private MenuPrincipal windowsForm;
-        private Render render;
+        private Render render = null;
         private Kinect kinect;
+        private int mode = 0;
 
         public void run()
         {
             windowsForm = new MenuPrincipal(this);
             windowsForm.ShowDialog();
-            
+
+            if(render != null)
+            {
+                if( mode == 0 )
+                {
+                    render.holo.LancerHologram1();
+                }
+                else if( mode == 1 )
+                {
+
+                }
+                else if( mode == 2 )
+                {
+
+                }
+                else { }
+            }
         }
 
         public void createRender(string image, int size) // pour une image seule
