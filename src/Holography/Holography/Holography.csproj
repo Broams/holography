@@ -51,19 +51,51 @@
     <Compile Include="Driver.cs" />
     <Compile Include="Hologram.cs" />
     <Compile Include="Kinect.cs" />
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuQuatreImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuQuatreImages.Designer.cs">
+      <DependentUpon>MenuQuatreImages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuVideo.Designer.cs">
+      <DependentUpon>MenuVideo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Render.cs" />
     <Compile Include="virtualScreen.cs" />
-    <Compile Include="windowsForm.cs">
+    <Compile Include="MenuImage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="windowsForm.Designer.cs">
-      <DependentUpon>windowsForm.cs</DependentUpon>
+    <Compile Include="MenuImage.Designer.cs">
+      <DependentUpon>MenuImage.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MenuImage.resx">
+      <DependentUpon>MenuImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuQuatreImages.resx">
+      <DependentUpon>MenuQuatreImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuVideo.resx">
+      <DependentUpon>MenuVideo.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
