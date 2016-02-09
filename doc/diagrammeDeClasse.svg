@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="551"
-   height="551"
+   height="710.87799"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="203.78631"
-     inkscape:cy="383.73133"
+     inkscape:zoom="0.7"
+     inkscape:cx="356.64856"
+     inkscape:cy="361.79258"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -50,10 +50,6 @@
        snapvisiblegridlinesonly="true"
        originx="-79.5px"
        originy="-109.5px" />
-    <sodipodi:guide
-       orientation="1,0"
-       position="-129.5,380.5"
-       id="guide3854" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -63,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -71,7 +67,7 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-79.5,-391.86218)">
+     transform="translate(-79.5,-231.98422)">
     <rect
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect2987"
@@ -118,7 +114,7 @@
            height="76.428558"
            x="222.85715"
            y="495.93362" /></flowRegion><flowPara
-         id="flowPara3777">-holograme                               Hologram</flowPara><flowPara
+         id="flowPara3777">-hologramme                           Hologram</flowPara><flowPara
          id="flowPara3822" /><flowPara
          id="flowPara3779">-virtualScreen[4]                 virtualScreen</flowPara><flowPara
          id="flowPara3204">-int                                                         size</flowPara></flowRoot>    <path
@@ -178,15 +174,15 @@
        x="480"
        y="542.36218" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.75592893;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3830"
        width="150"
-       height="140"
-       x="480"
-       y="392.36218" />
+       height="54.999996"
+       x="190"
+       y="232.36218" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 480,422.36218 150,0"
+       d="m 190,262.36218 150,0"
        id="path3832"
        inkscape:connector-curvature="0" />
     <path
@@ -208,14 +204,15 @@
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
-       x="530"
-       y="412.36218"
+       x="240"
+       y="252.36218"
        id="text3840"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3842"
-         x="530"
-         y="412.36218">Hologram</tspan></text>
+         x="240"
+         y="252.36218"
+         style="font-style:oblique;-inkscape-font-specification:URW Gothic L Book Oblique">Hologram</tspan></text>
     <rect
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3844"
@@ -398,5 +395,104 @@
            height="156.42857"
            x="195"
            y="310.21933" /></flowRegion><flowPara
-         id="flowPara3202"></flowPara></flowRoot>  </g>
+         id="flowPara3202" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3181"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+       transform="translate(-100,262.03191)"><flowRegion
+         id="flowRegion3183"><rect
+           id="rect3185"
+           width="140"
+           height="34.285713"
+           x="295"
+           y="5.2857141" /></flowRegion><flowPara
+         id="flowPara3187">+process()</flowPara></flowRoot>    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3830-8"
+       width="150"
+       height="140"
+       x="130"
+       y="322.36218" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 130,352.36218 150,0"
+       id="path3832-6"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+       x="180"
+       y="342.36218"
+       id="text3840-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3842-9"
+         x="180"
+         y="342.36218"
+         style="font-style:normal;-inkscape-font-specification:URW Gothic L Book">Hologram1</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3181-5"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+       transform="translate(-160.5,381.86218)"><flowRegion
+         id="flowRegion3183-8"><rect
+           id="rect3185-9"
+           width="140"
+           height="34.285713"
+           x="295"
+           y="5.2857141" /></flowRegion><flowPara
+         id="flowPara3187-7">+process()</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 130,382.36218 150,0"
+       id="path3189-9"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 125.5,-69.5 0,-35"
+       id="path3233"
+       inkscape:connector-curvature="0"
+       transform="translate(79.5,391.86218)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 115.5,-94.5 10,-10 10,10"
+       id="path3235"
+       inkscape:connector-curvature="0"
+       transform="translate(79.5,391.86218)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 400.5,130.5 0,-270 -140,0"
+       id="path3237"
+       inkscape:connector-curvature="0"
+       transform="translate(79.5,391.86218)" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+       x="140"
+       y="372.36218"
+       id="text3239"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3241"
+         x="140"
+         y="372.36218">-virtualScreen</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book"
+       x="485"
+       y="587.36218"
+       id="text3231"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3233"
+         x="485"
+         y="587.36218">-Image image</tspan><tspan
+         sodipodi:role="line"
+         x="485"
+         y="599.86218"
+         id="tspan3235" /><tspan
+         sodipodi:role="line"
+         x="485"
+         y="612.36218"
+         id="tspan3237" /></text>
+  </g>
 </svg>
