@@ -12,8 +12,10 @@ namespace Holography
 {
     public partial class MenuVideo : Form
     {
-        public MenuVideo()
+        public Driver driver;
+        public MenuVideo(Driver driv)
         {
+            driver = driv;
             InitializeComponent();
         }
 
@@ -34,7 +36,7 @@ namespace Holography
         {
             if ( !String.IsNullOrEmpty(SafeFileName.Text) && !String.IsNullOrEmpty(textBoxTailleEcran.Text))
             {
-                // appeller avec textBoxTailleEcran.Text ofd.SafeFileName
+                driver.createRender(int.Parse(textBoxTailleEcran.Text), ofd.SafeFileName);
             }
             else
             {

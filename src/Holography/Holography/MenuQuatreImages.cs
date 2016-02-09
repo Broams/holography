@@ -12,8 +12,10 @@ namespace Holography
 {
     public partial class MenuQuatreImages : Form
     {
-        public MenuQuatreImages()
+        public Driver driver;
+        public MenuQuatreImages(Driver driv)
         {
+            driver = driv;
             InitializeComponent();
         }
 
@@ -25,7 +27,6 @@ namespace Holography
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 TextBoxImage1.Text = ofd.SafeFileName;
-                //ofd.SafeFileName;
             }
         }
 
@@ -35,7 +36,6 @@ namespace Holography
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 TextBoxImage2.Text = ofd.SafeFileName;
-                //ofd.SafeFileName;
             }
         }
 
@@ -45,7 +45,6 @@ namespace Holography
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 TextBoxImage3.Text = ofd.SafeFileName;
-                //ofd.SafeFileName;
             }
         }
 
@@ -55,7 +54,6 @@ namespace Holography
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 TextBoxImage4.Text = ofd.SafeFileName;
-                //ofd.SafeFileName;
             }
         }
 
@@ -63,7 +61,7 @@ namespace Holography
         {
             if ( !String.IsNullOrEmpty(TextBoxImage1.Text) && !String.IsNullOrEmpty(TextBoxImage2.Text) && !String.IsNullOrEmpty(TextBoxImage3.Text) && !String.IsNullOrEmpty(TextBoxImage4.Text) && !String.IsNullOrEmpty(textBoxTailleEcran.Text))
             {
-                // appeller avec textBoxTailleEcran.Text TextBoxImage1.Text TextBoxImage2.Text TextBoxImage3.Text TextBoxImage4.Text
+                driver.createRender(int.Parse(textBoxTailleEcran.Text), TextBoxImage1.Text, TextBoxImage2.Text, TextBoxImage3.Text, TextBoxImage4.Text);
             }
             else
             {

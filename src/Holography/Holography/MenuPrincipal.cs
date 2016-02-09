@@ -12,8 +12,10 @@ namespace Holography
 {
     public partial class MenuPrincipal : Form
     {
-        public MenuPrincipal()
+        public Driver driver;
+        public MenuPrincipal(Driver driv)
         {
+            driver = driv;
             InitializeComponent();
             comboBoxMode.Items.Add("Menu une image");
             comboBoxMode.Items.Add("Menu Video");
@@ -28,21 +30,21 @@ namespace Holography
         {
             if (comboBoxMode.SelectedIndex == 0)
             {
-                MenuImage menuImage = new MenuImage();
-                menuImage.ShowDialog();
+                MenuImage menuImage = new MenuImage(driver);
                 this.Hide();
+                menuImage.ShowDialog();
             }
             else if (comboBoxMode.SelectedIndex == 1)
             {
                 MenuVideo menuVideo = new MenuVideo();
-                menuVideo.ShowDialog();
                 this.Hide();
+                menuVideo.ShowDialog();
             }
             else if (comboBoxMode.SelectedIndex == 2)
             {
                 MenuQuatreImages menuQuatreImage = new MenuQuatreImages();
-                menuQuatreImage.ShowDialog();
                 this.Hide();
+                menuQuatreImage.ShowDialog();
             }
             else
             {

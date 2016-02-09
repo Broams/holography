@@ -11,8 +11,8 @@ namespace Holography
         [STAThread]
         static void Main(string[] args)
         {
-            MenuPrincipal menuPP = new MenuPrincipal();
-            menuPP.ShowDialog();
+            Driver driver = new Driver();
+            driver.run();
         }
     }
 }
