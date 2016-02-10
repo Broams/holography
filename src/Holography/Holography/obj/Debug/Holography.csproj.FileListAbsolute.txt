@@ -19,3 +19,9 @@ C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debu
 C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\Holography.csproj.GenerateResource.Cache
 C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\Holography.MenuPrincipal.resources
 C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\Holography.HologramDisplay.resources
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\HologramDisplay2.g.cs
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\Holography_MarkupCompile.cache
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\Holography_MarkupCompile.lref
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\HologramDisplay2.baml
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\Holography.g.resources
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\Holography.HologramDisplay1.resources

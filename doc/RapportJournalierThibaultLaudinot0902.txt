@@ -1,12 +1,13 @@
 #########################################################
 Date:
-08/02/2016
+09/02/2016
 Nom et Prénom:
 Laudinot Thibault
 #########################################################
 Ce qui a été fait:
-Mise en place de l'architecture globale de l'application
-Création des différents menus
+Mise en place des classe Driver et Render
+Intégration du projet 1
+Adaptation de la taille des images à la fenêtre
 
 
 #########################################################

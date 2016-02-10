@@ -37,10 +37,11 @@ namespace Holography
             if ( !String.IsNullOrEmpty(SafeFileName.Text) && !String.IsNullOrEmpty(textBoxTailleEcran.Text))
             {
                 driver.createRender(int.Parse(textBoxTailleEcran.Text), ofd.FileName);
+                this.Dispose();
             }
             else
             {
-                System.Windows.Forms.MessageBox.Show("Il manque des informations.");
+                System.Windows.Forms.MessageBox.Show("La vidéo ou la taille n'a pas été trouvé");
             }
         }
 

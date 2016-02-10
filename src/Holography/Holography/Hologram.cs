@@ -8,6 +8,6 @@ namespace Holography
 {
     public interface Hologram
     {
-
+        void process();
     }
 }

@@ -40,7 +40,7 @@ namespace Holography
             }
             else
             {
-                System.Windows.Forms.MessageBox.Show("Il manque des informations.");
+                System.Windows.Forms.MessageBox.Show("L'image ou la taille n'a pas été trouvé");
             }
         }
 

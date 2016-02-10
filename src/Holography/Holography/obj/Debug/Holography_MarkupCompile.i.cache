@@ -1,20 +1,20 @@
 ﻿Holography
 
 
-exe
+winexe
 C#
 .cs
-c:\users\thibault\documents\visual studio 2015\Projects\Holography\Holography\obj\Debug\
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\
 Holography
 none
 false
 DEBUG;TRACE
 
-1-1478599828
+1-328699133
 
-11-308263246
-12305830433
-windowsForm.xaml;
+24-508804702
+15767094614
+HologramDisplay2.xaml;
 
 False
 

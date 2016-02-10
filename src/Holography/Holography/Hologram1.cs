@@ -23,9 +23,13 @@ namespace Holography
             this.size = size;
         }
 
-        public void LancerHologram1()
+        public void process()
         {
-            process();
+            north = vs.getImage();
+            east = vs.getImage();
+            south = vs.getImage();
+            west = vs.getImage();
+
             holoDisplay = new HologramDisplay1(this);
             holoDisplay.Size = new Size(size, size);
 
@@ -44,20 +48,11 @@ namespace Holography
             holoDisplay.pictureBox3.Width = largeur / 3;
             holoDisplay.pictureBox3.Location = new Point(largeur / 3, hauteur * 2 / 3);
 
-            System.Windows.Forms.MessageBox.Show("Largeur : " + largeur + "\n Largeur picture3: " + holoDisplay.pictureBox3.Width + "\n Hauteur : " + hauteur + "\n Hauteur picture3 : " + holoDisplay.pictureBox3.Height);
-
             holoDisplay.pictureBox4.Height = hauteur / 3;
             holoDisplay.pictureBox4.Width = largeur / 3;
             holoDisplay.pictureBox4.Location = new Point(0, hauteur / 3);
 
             holoDisplay.ShowDialog();
-        }
-        public void process()
-        {
-            north = vs.getImage();
-            east = vs.getImage();
-            south = vs.getImage();
-            west = vs.getImage();
         }
 
         public Image getNorth()
