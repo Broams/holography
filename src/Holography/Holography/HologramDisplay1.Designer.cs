@@ -1,6 +1,6 @@
 ﻿namespace Holography
 {
-    partial class HologramDisplay
+    partial class HologramDisplay1
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -98,10 +98,10 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.PictureBox pictureBox4;
+        public System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

@@ -52,11 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Driver.cs" />
-    <Compile Include="HologramDisplay.cs">
+    <Compile Include="HologramDisplay1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HologramDisplay.Designer.cs">
-      <DependentUpon>HologramDisplay.cs</DependentUpon>
+    <Compile Include="HologramDisplay1.Designer.cs">
+      <DependentUpon>HologramDisplay1.cs</DependentUpon>
     </Compile>
     <Compile Include="Hologram.cs" />
     <Compile Include="Hologram1.cs" />
@@ -93,10 +93,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="HologramDisplay.resx">
-      <DependentUpon>HologramDisplay.cs</DependentUpon>
+    <EmbeddedResource Include="HologramDisplay1.resx">
+      <DependentUpon>HologramDisplay1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuImage.resx">
       <DependentUpon>MenuImage.cs</DependentUpon>

@@ -10,13 +10,14 @@ using System.Windows.Forms;
 
 namespace Holography
 {
-    public partial class HologramDisplay : Form
+    public partial class HologramDisplay1 : Form
     {
         private Hologram1 holo;
-        public HologramDisplay(Hologram1 holo)
+        public HologramDisplay1(Hologram1 holo)
         {
             this.holo = holo;
             InitializeComponent();
+
             pictureBox1.Image = holo.getNorth();
             pictureBox2.Image = rotateImage(holo.getEast(), 90);
             pictureBox3.Image = rotateImage(holo.getSouth(), 180);
