@@ -23,7 +23,7 @@ namespace Holography
 
         private void SelectionVideo_Click(object sender, EventArgs e)
         {
-            //ofd.Filter = "JPEG|*.jpeg";
+            ofd.Filter = "MP4, WMV|*.mp4;*.wmv";
             if ( ofd.ShowDialog() == DialogResult.OK )
             {
                 FileName.Text = ofd.FileName;
@@ -36,7 +36,7 @@ namespace Holography
         {
             if ( !String.IsNullOrEmpty(SafeFileName.Text) && !String.IsNullOrEmpty(textBoxTailleEcran.Text))
             {
-                driver.createRender(int.Parse(textBoxTailleEcran.Text), ofd.FileName);
+                driver.createRender(int.Parse(textBoxTailleEcran.Text), ofd.FileName, Desynchronise.Checked);
                 this.Dispose();
             }
             else
@@ -46,5 +46,6 @@ namespace Holography
         }
 
         private void MenuVideo_Load(object sender, EventArgs e){}
+
     }
 }

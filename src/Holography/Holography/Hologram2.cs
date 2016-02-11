@@ -14,9 +14,11 @@ namespace Holography
         public HologramDisplay2 holoDisplay;
         public string video;
         public int size;
+        public bool check;
 
-        public Hologram2(string video, int size)
+        public Hologram2(string video, int size, bool check)
         {
+            this.check = check;
             this.video = video;
             this.size = size;
         }
@@ -45,7 +47,7 @@ namespace Holography
             holoDisplay.myMediaElement4.Width = largeur / 3;
             holoDisplay.myMediaElement4.IsMuted = true;
 
-            //holoDisplay.ShowDialog();
+            holoDisplay.ShowDialog();
         }
     }
 }

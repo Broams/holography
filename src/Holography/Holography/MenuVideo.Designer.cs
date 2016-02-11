@@ -34,6 +34,7 @@
             this.LabelTailleEcran = new System.Windows.Forms.Label();
             this.textBoxTailleEcran = new System.Windows.Forms.TextBox();
             this.BouttonDemarrer = new System.Windows.Forms.Button();
+            this.Desynchronise = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // SelectionVideo
@@ -86,11 +87,22 @@
             this.BouttonDemarrer.UseVisualStyleBackColor = true;
             this.BouttonDemarrer.Click += new System.EventHandler(this.BouttonDemarrer_Click);
             // 
+            // Desynchronise
+            // 
+            this.Desynchronise.AutoSize = true;
+            this.Desynchronise.Location = new System.Drawing.Point(416, 157);
+            this.Desynchronise.Name = "Desynchronise";
+            this.Desynchronise.Size = new System.Drawing.Size(96, 17);
+            this.Desynchronise.TabIndex = 7;
+            this.Desynchronise.Text = "Désynchronisé";
+            this.Desynchronise.UseVisualStyleBackColor = true;
+            // 
             // MenuVideo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(523, 323);
+            this.Controls.Add(this.Desynchronise);
             this.Controls.Add(this.BouttonDemarrer);
             this.Controls.Add(this.textBoxTailleEcran);
             this.Controls.Add(this.LabelTailleEcran);
@@ -113,5 +125,6 @@
         private System.Windows.Forms.Label LabelTailleEcran;
         private System.Windows.Forms.TextBox textBoxTailleEcran;
         private System.Windows.Forms.Button BouttonDemarrer;
+        private System.Windows.Forms.CheckBox Desynchronise;
     }
 }

@@ -13,7 +13,7 @@ namespace Holography
         private MenuPrincipal windowsForm;
         private Render render = null;
         private Kinect kinect;
-        public int mode = 0;
+        public int mode;
 
         public void run()
         {
@@ -22,48 +22,39 @@ namespace Holography
 
             if (render != null)
             {
-                if (mode == 0)
+                if (mode == 0) // pour une image
                 {
                     render.holo.process();
                 }
-                else if (mode == 1)
+                else if (mode == 1) // pour une vidéo
                 {
                     kinect = Kinect.getInstance();
                     Thread KinectThread = new Thread(new ThreadStart(kinect.LancerKinect));
                     KinectThread.Start();
 
-                    //Thread Holo2Thread = new Thread(new ThreadStart(render.holo2.process));
-                    //Holo2Thread.SetApartmentState(ApartmentState.STA);
-                    //Holo2Thread.Start();
-
-                    Thread BoucleWhileThread = new Thread(new ThreadStart
-                        (delegate () 
-                        {
-                            while (true)
-                            {
-                                if (kinect.getState() == 1)
-                                {
-                                    render.holo2.holoDisplay.ChangerStateVideo();
-                                }
-                                Thread.Sleep(200);
-                            }
-                        }));
-                    BoucleWhileThread.Start();
+                    Thread Holo2Thread = new Thread(new ThreadStart(render.holo2.process));
+                    Holo2Thread.SetApartmentState(ApartmentState.STA);
+                    Holo2Thread.Start();
                     
-                    render.holo2.process();
-
-                    /*while (true)
+                    int sta = 0;
+                    Action action = delegate { render.holo2.holoDisplay.ChangerStateVideo(sta);};
+                    while (true)
                     {
-                        //System.Windows.Forms.MessageBox.Show(kinect.getState().ToString());
-                        
-                        if(kinect.getState() == 1){
-                            render.holo2.holoDisplay.ChangerStateVideo();
+                        Thread.Sleep(50);
+                        if (kinect.getState() == 1) // les deux mains sont proches du torse, c'est pour mettre en pause
+                        {
+                            sta = 1;
+                            render.holo2.holoDisplay.myMediaElement1.Dispatcher.Invoke(action);
                         }
-                        Thread.Sleep(200);
-                    }*/
-
+                        else if (kinect.getState() != 1 &&  render.holo2.holoDisplay != null) // si c'est différent de pause, alors il replay
+                        {
+                            sta = 0;
+                            render.holo2.holoDisplay.myMediaElement1.Dispatcher.Invoke(action);
+                        }
+                        else { }
+                    }
                 }
-                else if (mode == 2)
+                else if (mode == 2) // pour le cube en 3D
                 {
                     kinect = Kinect.getInstance();
                     Thread KinectThread = new Thread(new ThreadStart(kinect.LancerKinect));
@@ -87,9 +78,9 @@ namespace Holography
         {
             render = new Render(image, size, this);
         }
-        public void createRender(int size, string video) // pour une video
+        public void createRender(int size, string video, bool check) // pour une video
         {
-            render = new Render(size, video, this);
+            render = new Render(size, video, check, this);
         }
         public void createRender(int size, string image1, string image2, string image3, string image4) // pour les quatres images
         {

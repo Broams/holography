@@ -18,11 +18,11 @@ namespace Holography
             virtualScreen vs = new virtualScreen(image);
             holo = new Hologram1(vs, size);
         }
-        public Render(int size, string video, Driver driv)
+        public Render(int size, string video, bool check, Driver driv)
         {
             this.driver = driv;
             driver.mode = 1;
-            holo2 = new Hologram2(video, size);
+            holo2 = new Hologram2(video, size, check);
         }
         public Render(int size, string image1, string image2, string image3, string image4, Driver driv)
         {

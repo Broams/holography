@@ -21,15 +21,18 @@ namespace Holography
     {
         class Path
         {
-            public string TestID { get; set; }
+            public string PathId { get; set; }
         }
         private string state = null;
+        private Hologram2 hologram2;
         public HologramDisplay2(Hologram2 holo)
         {
+            hologram2 = holo;
             InitializeComponent();
             Path PathInstance = new Path();
-            PathInstance.TestID = holo.video;
+            PathInstance.PathId = holo.video;
             this.DataContext = PathInstance;
+
             myMediaElement1.LoadedBehavior = MediaState.Manual;
             myMediaElement2.LoadedBehavior = MediaState.Manual;
             myMediaElement3.LoadedBehavior = MediaState.Manual;
@@ -39,6 +42,9 @@ namespace Holography
             myMediaElement2.MediaEnded += new RoutedEventHandler(myMediaElement2_MediaEnded);
             myMediaElement3.MediaEnded += new RoutedEventHandler(myMediaElement3_MediaEnded);
             myMediaElement4.MediaEnded += new RoutedEventHandler(myMediaElement4_MediaEnded);
+
+            myMediaElement1.MediaOpened += new RoutedEventHandler(myMediaElement1_MediaOpened);
+            
 
             myMediaElement1.Play();
             myMediaElement2.Play();
@@ -72,26 +78,30 @@ namespace Holography
         {
             if(state == "play")
             {
-                myMediaElement1.Pause();
-                myMediaElement2.Pause();
-                myMediaElement3.Pause();
-                myMediaElement4.Pause();
-                state = "pause";
+                ChangerStateVideo(0);
             }
-            else if (state == "pause")
+            else if(state == "pause")
             {
-                myMediaElement1.Play();
-                myMediaElement2.Play();
-                myMediaElement3.Play();
-                myMediaElement4.Play();
-                state = "play";
+                ChangerStateVideo(1);
             }
-            else { }
+        }
+        private void myMediaElement1_MediaOpened(object sender, RoutedEventArgs e)
+        {
+            if (hologram2.check)
+            {
+                int duration = Convert.ToInt32(myMediaElement1.NaturalDuration.TimeSpan.TotalSeconds);
+                int second = duration / 4;
+                int third = duration / 2;
+                int fourth = duration / 4 * 3;
+                myMediaElement2.Position = new TimeSpan(0, 0, 0, second, 0);
+                myMediaElement3.Position = new TimeSpan(0, 0, 0, third, 0);
+                myMediaElement4.Position = new TimeSpan(0, 0, 0, fourth, 0);
+            }
         }
 
-        public void ChangerStateVideo()
+        public void ChangerStateVideo(int stateVoulu)
         {
-            if (state == "play")
+            if (state == "play" && stateVoulu == 1)
             {
                 myMediaElement1.Pause();
                 myMediaElement2.Pause();
@@ -99,7 +109,7 @@ namespace Holography
                 myMediaElement4.Pause();
                 state = "pause";
             }
-            else if (state == "pause")
+            else if (state == "pause" && stateVoulu == 0)
             {
                 myMediaElement1.Play();
                 myMediaElement2.Play();

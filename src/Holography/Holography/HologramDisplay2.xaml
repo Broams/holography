@@ -19,28 +19,28 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
-        <MediaElement Grid.Column="1" Source="{Binding Path=TestID}" Width="139" Name="myMediaElement1" Margin="11,0">
+        <MediaElement Grid.Column="1" Source="{Binding Path=PathId}" Width="139" Name="myMediaElement1" Margin="11,0">
             <MediaElement.LayoutTransform>
                 <TransformGroup>
                     <RotateTransform Angle="0"/>
                 </TransformGroup>
             </MediaElement.LayoutTransform>
         </MediaElement>
-        <MediaElement Grid.Row="1" Source="{Binding Path=TestID}" Name="myMediaElement4" Margin="0,0,11,0" HorizontalAlignment="Right" Width="139" Height="139" VerticalAlignment="Top">
+        <MediaElement Grid.Row="1" Source="{Binding Path=PathId}" Name="myMediaElement4" Margin="0,0,11,0" HorizontalAlignment="Right" Width="139" Height="139" VerticalAlignment="Top">
             <MediaElement.LayoutTransform>
                 <TransformGroup>
                     <RotateTransform Angle="270"/>
                 </TransformGroup>
             </MediaElement.LayoutTransform>
         </MediaElement>
-        <MediaElement Grid.Column="2" Grid.Row="1" Source="{Binding TestID}" Width="139" Name="myMediaElement2" HorizontalAlignment="Left" Margin="11,0,0,0" Height="139" VerticalAlignment="Top">
+        <MediaElement Grid.Column="2" Grid.Row="1" Source="{Binding Path=PathId}" Width="139" Name="myMediaElement2" HorizontalAlignment="Left" Margin="11,0,0,0" Height="139" VerticalAlignment="Top">
             <MediaElement.LayoutTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
                 </TransformGroup>
             </MediaElement.LayoutTransform>
         </MediaElement>
-        <MediaElement Grid.Column="1" Grid.Row="2" Source="{Binding Path=TestID}" Name="myMediaElement3" Margin="11,4,12,0">
+        <MediaElement Grid.Column="1" Grid.Row="2" Source="{Binding Path=PathId}" Name="myMediaElement3" Margin="11,4,12,0">
             <MediaElement.LayoutTransform>
                 <TransformGroup>
                     <RotateTransform Angle="180"/>
