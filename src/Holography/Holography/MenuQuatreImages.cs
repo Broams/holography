@@ -62,6 +62,7 @@ namespace Holography
             if ( !String.IsNullOrEmpty(TextBoxImage1.Text) && !String.IsNullOrEmpty(TextBoxImage2.Text) && !String.IsNullOrEmpty(TextBoxImage3.Text) && !String.IsNullOrEmpty(TextBoxImage4.Text) && !String.IsNullOrEmpty(textBoxTailleEcran.Text))
             {
                 driver.createRender(int.Parse(textBoxTailleEcran.Text), TextBoxImage1.Text, TextBoxImage2.Text, TextBoxImage3.Text, TextBoxImage4.Text);
+                this.Dispose();
             }
             else
             {

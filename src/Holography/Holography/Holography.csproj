@@ -37,6 +37,18 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="KinectControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\exia\Troisième année\Projet Microsoft Net\KinectFinal\KinectFinal\bin\Release\KinectControls.dll</HintPath>
+    </Reference>
+    <Reference Include="KinectFinal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\exia\Troisième année\Projet Microsoft Net\KinectFinal\KinectFinal\bin\Release\KinectFinal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Kinect, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\exia\Troisième année\Projet Microsoft Net\KinectFinal\KinectFinal\bin\Release\Microsoft.Kinect.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -66,7 +78,6 @@
     <Compile Include="HologramDisplay2.xaml.cs">
       <DependentUpon>HologramDisplay2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Kinect.cs" />
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>

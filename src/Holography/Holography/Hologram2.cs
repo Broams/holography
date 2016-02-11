@@ -11,7 +11,7 @@ namespace Holography
 {
     public class Hologram2 : Hologram
     {
-        private HologramDisplay2 holoDisplay;
+        public HologramDisplay2 holoDisplay;
         public string video;
         public int size;
 
@@ -45,7 +45,7 @@ namespace Holography
             holoDisplay.myMediaElement4.Width = largeur / 3;
             holoDisplay.myMediaElement4.IsMuted = true;
 
-            holoDisplay.ShowDialog();
+            //holoDisplay.ShowDialog();
         }
     }
 }

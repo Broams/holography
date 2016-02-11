@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using KinectFinal;
+using System.Threading;
 
 namespace Holography
 {
@@ -18,25 +20,66 @@ namespace Holography
             windowsForm = new MenuPrincipal(this);
             windowsForm.ShowDialog();
 
-            if(render != null)
+            if (render != null)
             {
-                if( mode == 0 )
+                if (mode == 0)
                 {
                     render.holo.process();
                 }
-                else if( mode == 1 )
+                else if (mode == 1)
                 {
-                    render.holo2.process();
-                }
-                else if( mode == 2 )
-                {
+                    kinect = Kinect.getInstance();
+                    Thread KinectThread = new Thread(new ThreadStart(kinect.LancerKinect));
+                    KinectThread.Start();
 
+                    //Thread Holo2Thread = new Thread(new ThreadStart(render.holo2.process));
+                    //Holo2Thread.SetApartmentState(ApartmentState.STA);
+                    //Holo2Thread.Start();
+
+                    Thread BoucleWhileThread = new Thread(new ThreadStart
+                        (delegate () 
+                        {
+                            while (true)
+                            {
+                                if (kinect.getState() == 1)
+                                {
+                                    render.holo2.holoDisplay.ChangerStateVideo();
+                                }
+                                Thread.Sleep(200);
+                            }
+                        }));
+                    BoucleWhileThread.Start();
+                    
+                    render.holo2.process();
+
+                    /*while (true)
+                    {
+                        //System.Windows.Forms.MessageBox.Show(kinect.getState().ToString());
+                        
+                        if(kinect.getState() == 1){
+                            render.holo2.holoDisplay.ChangerStateVideo();
+                        }
+                        Thread.Sleep(200);
+                    }*/
+
+                }
+                else if (mode == 2)
+                {
+                    kinect = Kinect.getInstance();
+                    Thread KinectThread = new Thread(new ThreadStart(kinect.LancerKinect));
+                    KinectThread.Start();
+
+                    while (true)
+                    {
+                        System.Windows.Forms.MessageBox.Show(kinect.getState().ToString());
+                        Thread.Sleep(1000);
+                    }
                 }
                 else
                 {
                     System.Windows.Forms.MessageBox.Show("Aucun mode n'a été detecté.");
-
                 }
+                this.Dispose();
             }
         }
 
@@ -52,9 +95,9 @@ namespace Holography
         {
             render = new Render(size, image1, image2, image3, image4, this);
         }
-        public void Dispose()
+        public virtual void Dispose()
         {
-            this.Dispose();
+            GC.SuppressFinalize(this);
         }
     }
 }

@@ -25,3 +25,9 @@ C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debu
 C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\HologramDisplay2.baml
 C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\Holography.g.resources
 C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\obj\Debug\Holography.HologramDisplay1.resources
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\bin\Debug\KinectControls.dll
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\bin\Debug\KinectFinal.dll
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\bin\Debug\Microsoft.Kinect.dll
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\bin\Debug\KinectControls.pdb
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\bin\Debug\KinectFinal.pdb
+C:\Users\thibault\Documents\GitHub\holography\src\Holography\Holography\bin\Debug\Microsoft.Kinect.xml
